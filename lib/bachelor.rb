@@ -96,5 +96,5 @@ average = ""
     end
     end
   end
-   average.ceil
+   average.float
 end
