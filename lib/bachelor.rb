@@ -82,7 +82,18 @@ def get_occupation(data, town)
 
 
 
-
 def get_average_age_for_season(data, season)
-  # code here
+ages = []
+
+  data.collect do |time, stats|
+
+    if season == time
+      stats.collect do |i|
+     
+    ages << i.values[1].to_i
+  
+    end
+    end
+  end
+ages.reduce(0, :+) / ages.length
 end
