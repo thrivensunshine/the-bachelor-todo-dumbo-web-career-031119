@@ -96,5 +96,5 @@ average = ""
     end
     end
   end
-   average.float
+   average.round
 end
