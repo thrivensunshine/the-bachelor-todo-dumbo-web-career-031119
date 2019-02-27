@@ -95,5 +95,5 @@ ages = []
     end
     end
   end
-ages.reduce(0, :+) / ages.length
+ages.reduce(0, :+) / (ages.length-1)
 end
