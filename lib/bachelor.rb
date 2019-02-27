@@ -87,11 +87,15 @@ average = ""
     if season == time
       stats.collect do |i|
      
-    ages << i.values[1].to_i
-    # puts "#{ages.length} <LENGTH #{ages} <ARRAY #{ages.reduce(0, :+) } << reduced "
-    average = ages.reduce(0, :+) / ages.length
-    end
-    end
+    ages << i.values[1].to_f
+    #  puts "#{ages.length} <LENGTH #{ages} <ARRAY #{ages.reduce(0, :+) } << reduced "
+  average = (ages.reduce(0, :+) / ages.length)
+    
+     
   end
-  average.ceil
+    
+    end
+    end
+ 
+   average.ceil
 end
