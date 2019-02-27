@@ -93,5 +93,5 @@ average = ""
     end
     end
   end
-  average
+  average.ceil
 end
