@@ -89,13 +89,12 @@ average = ""
      
     ages << i.values[1].to_f
     #  puts "#{ages.length} <LENGTH #{ages} <ARRAY #{ages.reduce(0, :+) } << reduced "
+    
   average = (ages.reduce(0, :+) / ages.length)
     
      
+    end
+    end
   end
-    
-    end
-    end
- 
    average.ceil
 end
